@@ -6,6 +6,7 @@
 #include <fstream>
 #include <string>
 #include <sstream>
+#include <filesystem>
 #include <chrono>
 
 #define BLUE			9
@@ -97,7 +98,15 @@ private:
 
     // Private constructor for singleton
     Logger() {
-        fileStream.open("log.txt", std::ios::app);
+        std::filesystem::path logDir = "../Logs";
+        if (!std::filesystem::exists(logDir)) {
+            std::filesystem::create_directories(logDir);
+        }
+        fileStream.open(logDir / "log.txt", std::ios::app);
+        if (!fileStream.is_open()) {
+            Log(Level::WARN, "Unable to create log files for this session");
+        }
+        //fileStream.open("../Logs/log.txt", std::ios::app);
     }
 };
 
