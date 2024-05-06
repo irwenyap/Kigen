@@ -18,8 +18,8 @@ public:
     void Start();
     void Update();
 
-    double GetDeltaTime() const { return deltaTime; }
-    double GetElapsedTime() const { return elapsedTime; }
+    inline double GetDeltaTime() const { return deltaTime; }
+    inline double GetElapsedTime() const { return elapsedTime; }
 
 private:
     static double DurationInSeconds(const Duration& duration) {

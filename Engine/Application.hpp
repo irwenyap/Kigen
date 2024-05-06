@@ -11,12 +11,11 @@ public:
 	void Run();
 	void Exit();
 
-
 private:
 	std::unique_ptr<Window> m_context;
 
-	Application() {}
-	~Application() {}
+	Application() = default;
+	~Application() = default;
 };
 
 #endif // !APPLICATION_HPP

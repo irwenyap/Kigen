@@ -7,7 +7,7 @@
 class Window {
 public:
 	Window(const char* title, int width, int height);
-	~Window();
+	~Window() = default;
 
 	GLFWwindow* GetWindow() const;
 	void SwapBuffers();

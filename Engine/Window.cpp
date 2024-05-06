@@ -33,10 +33,6 @@ Window::Window(const char* title, int width, int height)
 	glfwSetInputMode(m_window.get(), GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 }
 
-Window::~Window()
-{
-}
-
 GLFWwindow* Window::GetWindow() const
 {
 	return m_window.get();

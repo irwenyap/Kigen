@@ -106,7 +106,6 @@ private:
         if (!fileStream.is_open()) {
             Log(Level::WARN, "Unable to create log files for this session");
         }
-        //fileStream.open("../Logs/log.txt", std::ios::app);
     }
 };
 
