@@ -1,6 +1,4 @@
-# Kigen 起源
-## GAM200 Engine
-
+# Kigen 起源 (GAM200 Engine)
 ## My Contributions
 
 As Technical Lead / Engine Programmer, I was responsible for:
@@ -13,7 +11,8 @@ As Technical Lead / Engine Programmer, I was responsible for:
 - Designed and implemented a Prefab System
 - Integrated MPG video player into rendering pipeline
 
-# N.A.N.O: The Last Line
+# This Engine was used to build:
+## N.A.N.O: The Last Line
 
 **N.A.N.O: The Last Line** is a single-player 2D platformer set in a post-apocalyptic world.
 
