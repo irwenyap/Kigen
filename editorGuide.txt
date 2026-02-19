@@ -1,0 +1,4 @@
+Right side shows the Hierarchy panel, you can add entities pressing the "Add Entity" button above it, clicking on the entities
+will show the components it holds, you can modify it in the object editor panel.
+You can drag and drop the entity onto one another on the hierarchy panel to parent and unparent them.
+You can drag assets into the asset browser panel to import assets.

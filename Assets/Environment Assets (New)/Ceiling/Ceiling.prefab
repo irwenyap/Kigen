@@ -1,0 +1,49 @@
+{
+    "Components": {
+        "Name": {
+            "name": "Ceiling",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 0,
+            "position": {
+                "x": 3324.984130859375,
+                "y": 939.9847412109375,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 2560.0,
+                "y": 1536.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 1000.0,
+                "y": 1000.0,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": false,
+            "sortingLayer": 5,
+            "textureFile": ""
+        }
+    }
+}

@@ -1,0 +1,96 @@
+{
+    "Components": {
+        "Name": {
+            "name": "UCB",
+            "prefabID": "19589fd0e57-9e9ae50f95f93189-c3039bcb7735e332",
+            "prefabPath": "../Assets\\04. Environment Assets (New)\\Platform\\UCB.prefab"
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 0,
+            "position": {
+                "x": 9645.46484375,
+                "y": -6095.8232421875,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 2304.0,
+                "y": 768.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 1000.0,
+                "y": 1000.0,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": true,
+            "sortingLayer": 5,
+            "textureFile": "19589fb7f37-5afc70cb656ce67b-b4889cc67cded191"
+        },
+        "AABBCollider2D": {
+            "bounciness": 0.0,
+            "min": {
+                "x": 9457.26953125,
+                "y": -5999.1201171875
+            },
+            "max": {
+                "x": 9834.3701171875,
+                "y": -5902.6201171875
+            },
+            "isTrigger": false
+        },
+        "Rigidbody2D": {
+            "mass": 1.0,
+            "drag": 0.0,
+            "gravity": 1.0,
+            "static": true,
+            "kinematic": false,
+            "grounded": false,
+            "pos": {
+                "x": 9645.46484375,
+                "y": -6095.8232421875
+            },
+            "vel": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        },
+        "Animation": {
+            "spritesPerRow": 1,
+            "spritesPerCol": 6,
+            "numFrames": 6,
+            "startFrame": 0,
+            "endFrame": 5,
+            "timePerFrame": 0.07,
+            "isLooping": true,
+            "playOnce": false
+        },
+        "ScriptComponent": {
+            "className": "SandBox.PlatformBlock",
+            "parameters": {
+                "moveSpeed": {
+                    "type": "Float",
+                    "value": 250.0
+                }
+            }
+        }
+    }
+}

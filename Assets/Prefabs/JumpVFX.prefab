@@ -1,0 +1,96 @@
+{
+    "Components": {
+        "Name": {
+            "name": "JumpVFX",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 0,
+            "position": {
+                "x": 17642.05078125,
+                "y": -757.4719848632813,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1000.0,
+                "y": 999.9999389648438,
+                "z": 0.9999999403953552
+            },
+            "rotation": {
+                "x": -0.0,
+                "y": 0.0,
+                "z": -0.0
+            },
+            "localPosition": {
+                "x": 18.768470764160156,
+                "y": -2.174842357635498,
+                "z": -3.5527073260533965e-15
+            },
+            "localScale": {
+                "x": 0.9999999403953552,
+                "y": 0.9999999403953552,
+                "z": 0.9999999403953552
+            },
+            "localRotation": {
+                "x": -0.0,
+                "y": 0.0,
+                "z": -0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": true,
+            "sortingLayer": 6,
+            "textureFile": "194d7127796-9d9e3d06abcea0d6-b6f410be7eca8f4c"
+        },
+        "AABBCollider2D": {
+            "bounciness": 0.0,
+            "min": {
+                "x": 17392.05078125,
+                "y": -1007.4719848632813
+            },
+            "max": {
+                "x": 17892.05078125,
+                "y": -507.47198486328125
+            },
+            "isTrigger": true
+        },
+        "Rigidbody2D": {
+            "mass": 1.0,
+            "drag": 0.0,
+            "gravity": 1.0,
+            "static": true,
+            "kinematic": false,
+            "grounded": false,
+            "pos": {
+                "x": 17642.05078125,
+                "y": -757.4719848632813
+            },
+            "vel": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        },
+        "Animation": {
+            "spritesPerRow": 3,
+            "spritesPerCol": 3,
+            "numFrames": 9,
+            "startFrame": 0,
+            "endFrame": 9,
+            "timePerFrame": 0.02,
+            "isLooping": true,
+            "playOnce": false
+        },
+        "ScriptComponent": {
+            "className": "SandBox.JumpVFX",
+            "parameters": {
+                "yOffset": {
+                    "type": "Float",
+                    "value": 85.0
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "Components": {
+        "Name": {
+            "name": "Checkpoint",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "position": {
+                "x": -5059.37109375,
+                "y": -334.12689208984375,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1000.0,
+                "y": 1000.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": true,
+            "textureFile": "19382a65705-f1c4dc66ab8b3a28-36da30dd77d80b74"
+        },
+        "Animation": {
+            "spritesPerRow": 4,
+            "spritesPerCol": 4,
+            "numFrames": 16,
+            "startFrame": 0,
+            "endFrame": 16,
+            "timePerFrame": 0.15,
+            "isLooping": true
+        }
+    }
+}

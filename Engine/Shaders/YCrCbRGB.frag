@@ -1,0 +1,48 @@
+/*********************************************************************
+ * \file	YCrCbRGB.frag
+ * \brief	
+ *      This fragment shader processes fragment data to produce the final
+ *      pixel color on the screen. It uses texture mapping and handles 
+ *      transparency based on texture coordinates and texture IDs.
+ *
+ * \author	y.ziyangirwen, 2301345
+ * \email	y.ziyangirwen@digipen.edu
+ * \date	3 October 2024
+ * 
+ * Copyright(C) 2024 DigiPen Institute of Technology.
+ * Reproduction or disclosure of this file or its contents without the
+ * prior written consent of DigiPen Institute of Technology is prohibited.
+ *********************************************************************/
+#version 460 core
+
+in vec4 vColor;        // Color passed from vertex shader
+in vec2 vTexCoords;    // Texture coordinates passed from vertex shader
+flat in int vTexArrayID;    // Texture ID passed from vertex shader (flat, no interpolation)
+flat in int vTexLayerID;        // Texture ID passed from vertex shader (flat, no interpolation)
+
+out vec4 FragColor;
+
+uniform sampler2DArray textureArrays[32];  // Array of texture samplers (up to 32)
+
+const mat4 rec601 = mat4(
+    1.16438,  0.00000,  1.59603, -0.87079,  
+    1.16438, -0.39176, -0.81297,  0.52959,  
+    1.16438,  2.01723,  0.00000, -1.08139,  
+    0, 0, 0, 1
+);
+
+void main()
+{
+    // If texture ID is invalid (less than 0), use the vertex color
+    if (vTexArrayID < 0 || vTexLayerID < 0)
+    {
+        //FragColor = vColor;
+        FragColor = vec4(0.0, 0.0, 0.0, 1.0);
+    }
+    // If texture ID is valid, sample the corresponding texture
+    else
+    {
+        FragColor = texture(textureArrays[vTexArrayID], vec3(vTexCoords, vTexLayerID));
+
+    }
+}

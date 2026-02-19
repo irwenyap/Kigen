@@ -1,0 +1,49 @@
+{
+    "Components": {
+        "Name": {
+            "name": "Cover L6",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 11643757,
+            "position": {
+                "x": 10872.943359375,
+                "y": -7041.22998046875,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 3000.0,
+                "y": 1000.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": 14.169849395751953,
+                "y": -7.00324010848999,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 3.0000052452087402,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": false,
+            "sortingLayer": 8,
+            "textureFile": "195768ff56e-be90255ba18b96cb-70e91f5df7393f2c"
+        }
+    }
+}

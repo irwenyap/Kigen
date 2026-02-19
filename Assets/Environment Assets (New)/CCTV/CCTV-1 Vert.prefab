@@ -1,0 +1,57 @@
+{
+    "Components": {
+        "Name": {
+            "name": "CCTV-1 Vert",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 0,
+            "position": {
+                "x": 19559.689453125,
+                "y": -5553.8046875,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 511.9999694824219,
+                "y": 511.9999694824219,
+                "z": 0.9999999403953552
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": 0.7538661956787109,
+                "y": 0.2645840048789978,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 0.2948035001754761,
+                "y": 0.2499999850988388,
+                "z": 0.9999999403953552
+            },
+            "localRotation": {
+                "x": -0.0,
+                "y": 0.0,
+                "z": -0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": false,
+            "textureFile": "195531788da-2e7669e31715b486-16d5e9e6a961de33"
+        },
+        "ScriptComponent": {
+            "className": "SandBox.CCTVTracking",
+            "parameters": {
+                "TrackVertical": {
+                    "type": "Bool",
+                    "value": true
+                }
+            }
+        }
+    }
+}

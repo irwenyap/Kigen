@@ -1,0 +1,64 @@
+{
+    "Components": {
+        "Name": {
+            "name": "H2PBack",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 11698482,
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1000.0,
+                "y": 1000.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": -0.0,
+                "y": 0.0,
+                "z": -0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 6,
+            "isAnimated": false,
+            "sortingLayer": 0,
+            "textureFile": "19381fde018-31fd38f9a4c90bea-d0feb104016f0f41"
+        },
+        "UI": {
+            "position": {
+                "x": 0.4099999964237213,
+                "y": 0.23999999463558197
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            },
+            "size": {
+                "x": 0.18000000715255737,
+                "y": 0.07699999958276749
+            },
+            "rotation": 0.0
+        }
+    }
+}

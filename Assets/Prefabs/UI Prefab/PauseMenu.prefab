@@ -1,0 +1,64 @@
+{
+    "Components": {
+        "Name": {
+            "name": "PauseMenu",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 11698482,
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.4000000059604645
+            },
+            "scale": {
+                "x": 1000.0,
+                "y": 1000.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.4000000059604645
+            },
+            "localScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": -0.0,
+                "y": 0.0,
+                "z": -0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 6,
+            "isAnimated": false,
+            "sortingLayer": 0,
+            "textureFile": "19381a269d6-9133605c9898783d-a050581c49fbcde6"
+        },
+        "UI": {
+            "position": {
+                "x": -0.019999999552965164,
+                "y": -0.11999999731779099
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            },
+            "size": {
+                "x": 1.0499999523162842,
+                "y": 1.1299999952316284
+            },
+            "rotation": 0.0
+        }
+    }
+}

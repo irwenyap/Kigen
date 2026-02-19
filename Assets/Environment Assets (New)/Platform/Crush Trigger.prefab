@@ -1,0 +1,81 @@
+{
+    "Components": {
+        "Name": {
+            "name": "Crush Trigger",
+            "prefabID": "195e06ffe26-4bcd5fa333756399-9f7a3efe7a7111f5",
+            "prefabPath": "../Assets\\04. Environment Assets (New)\\Platform/Crush Trigger.prefab"
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 0,
+            "position": {
+                "x": 9643.962890625,
+                "y": -5879.6982421875,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 436.6000061035156,
+                "y": 71.5,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 1000.0,
+                "y": 1000.0,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": false,
+            "sortingLayer": 5,
+            "textureFile": "1937c2ec8a1-641df1c6952ce39e-123e196b0dfbbd0d"
+        },
+        "AABBCollider2D": {
+            "bounciness": 0.0,
+            "min": {
+                "x": 9534.8125,
+                "y": -5897.5732421875
+            },
+            "max": {
+                "x": 9753.11328125,
+                "y": -5861.8232421875
+            },
+            "isTrigger": true
+        },
+        "Rigidbody2D": {
+            "mass": 1.0,
+            "drag": 0.0,
+            "gravity": 1.0,
+            "static": true,
+            "kinematic": false,
+            "grounded": false,
+            "pos": {
+                "x": 9643.962890625,
+                "y": -5879.6982421875
+            },
+            "vel": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        },
+        "ScriptComponent": {
+            "className": "SandBox.CrushTrigger",
+            "parameters": {}
+        }
+    }
+}

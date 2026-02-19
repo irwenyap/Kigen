@@ -1,0 +1,81 @@
+{
+    "Components": {
+        "Name": {
+            "name": "Sunlight",
+            "prefabID": "19379bfa403-2e0422a0cdd6b843-90c3ea2bb3b599fa",
+            "prefabPath": "../Assets\\01. Core\\Charged Blocks\\Sunlight.prefab"
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 0,
+            "position": {
+                "x": 6284.88134765625,
+                "y": -2999.454833984375,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1614.3499755859375,
+                "y": 2048.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localRotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": false,
+            "sortingLayer": 4,
+            "textureFile": "193770d317c-debf0b3856c69336-c49cc56056becb7a"
+        },
+        "AABBCollider2D": {
+            "bounciness": 0.0,
+            "min": {
+                "x": 6052.47802734375,
+                "y": -3461.7548828125
+            },
+            "max": {
+                "x": 6511.57763671875,
+                "y": -2729.2548828125
+            },
+            "isTrigger": true
+        },
+        "Rigidbody2D": {
+            "mass": 1.0,
+            "drag": 0.0,
+            "gravity": 1.0,
+            "static": true,
+            "kinematic": false,
+            "grounded": false,
+            "pos": {
+                "x": 6284.88134765625,
+                "y": -2999.454833984375
+            },
+            "vel": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        },
+        "ScriptComponent": {
+            "className": "SandBox.Sunlight",
+            "parameters": {}
+        }
+    }
+}

@@ -1,0 +1,78 @@
+{
+    "Components": {
+        "Name": {
+            "name": "BatteryBarVFX",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 11698482,
+            "position": {
+                "x": -82.60173034667969,
+                "y": -493.6610412597656,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1000.0,
+                "y": 1000.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": -0.08260173350572586,
+                "y": -0.4936610758304596,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": -0.0,
+                "y": 0.0,
+                "z": -0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 6,
+            "isAnimated": false,
+            "sortingLayer": 0,
+            "textureFile": "193791a9f73-cbcfb1dbc52cc38c-a776ceb7d9ce294b"
+        },
+        "Animation": {
+            "spritesPerRow": 4,
+            "spritesPerCol": 3,
+            "numFrames": 10,
+            "startFrame": 0,
+            "endFrame": 10,
+            "timePerFrame": 0.07,
+            "isLooping": true,
+            "playOnce": false
+        },
+        "ScriptComponent": {
+            "className": "SandBox.BatteryBarVFX",
+            "parameters": {}
+        },
+        "UI": {
+            "position": {
+                "x": 0.2199999988079071,
+                "y": 0.6299999952316284
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            },
+            "size": {
+                "x": 0.5799999833106995,
+                "y": 0.5
+            },
+            "rotation": 0.0
+        }
+    }
+}

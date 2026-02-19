@@ -1,0 +1,59 @@
+{
+    "Components": {
+        "Name": {
+            "name": "Final Door Interact UI",
+            "prefabID": "1958aad2518-881a401edf0b798a-587ad338fce1012a",
+            "prefabPath": "../Assets\\01. Core\\Final Door/Final Door Interact UI.prefab"
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 11632358,
+            "position": {
+                "x": 10239.9775390625,
+                "y": -2522.026123046875,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 128.0,
+                "y": 128.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": 7.152557373046875e-7,
+                "y": -0.12514442205429077,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 0.029999999329447746,
+                "y": 0.10999999940395355,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": true,
+            "sortingLayer": 4,
+            "textureFile": "194d527a524-a98f1b5532cd7581-4f7b7fde24d3287b"
+        },
+        "Animation": {
+            "spritesPerRow": 16,
+            "spritesPerCol": 8,
+            "numFrames": 128,
+            "startFrame": 0,
+            "endFrame": 128,
+            "timePerFrame": 0.01,
+            "isLooping": true,
+            "playOnce": false
+        }
+    }
+}

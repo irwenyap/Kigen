@@ -1,0 +1,49 @@
+{
+    "Components": {
+        "Name": {
+            "name": "FG Top 2",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 11697240,
+            "position": {
+                "x": 21673.330078125,
+                "y": -4700.83447265625,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 2582.60009765625,
+                "y": 1551.0999755859375,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": 27.899999618530273,
+                "y": -3.500814199447632,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": -4.480000019073486,
+                "y": 3.950007200241089,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": false,
+            "sortingLayer": 8,
+            "textureFile": "1958e2b8752-56ad9bd62fe14e17-9af33be33345eb79"
+        }
+    }
+}

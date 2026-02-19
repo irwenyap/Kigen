@@ -1,0 +1,81 @@
+{
+    "Components": {
+        "Name": {
+            "name": "UCB",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 0,
+            "position": {
+                "x": 10077.142578125,
+                "y": -3534.284912109375,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 256.0,
+                "y": 256.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 1000.0,
+                "y": 1000.0,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": false,
+            "sortingLayer": 5,
+            "textureFile": "1955615a4a4-822496f6e4728a79-84939a18f8528648"
+        },
+        "AABBCollider2D": {
+            "bounciness": 0.0,
+            "min": {
+                "x": 10013.142578125,
+                "y": -3598.284912109375
+            },
+            "max": {
+                "x": 10141.142578125,
+                "y": -3470.284912109375
+            },
+            "isTrigger": false
+        },
+        "Rigidbody2D": {
+            "mass": 1.0,
+            "drag": 0.0,
+            "gravity": 1.0,
+            "static": true,
+            "kinematic": false,
+            "grounded": false,
+            "pos": {
+                "x": 10077.142578125,
+                "y": -3534.284912109375
+            },
+            "vel": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        },
+        "ScriptComponent": {
+            "className": "SandBox.UnchargedBlock",
+            "parameters": {}
+        }
+    }
+}

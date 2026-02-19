@@ -1,0 +1,87 @@
+{
+    "Components": {
+        "Name": {
+            "name": "ChargingVFX",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 0,
+            "position": {
+                "x": 13368.064453125,
+                "y": -2378.971923828125,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 256.0,
+                "y": 256.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 1000.0,
+                "y": 1000.0,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": true,
+            "sortingLayer": 31,
+            "textureFile": "194d745088d-b6ef09e9f44f276d-a45f4c263dcaaa6f"
+        },
+        "AABBCollider2D": {
+            "bounciness": 0.0,
+            "min": {
+                "x": 13118.064453125,
+                "y": -2628.971923828125
+            },
+            "max": {
+                "x": 13618.064453125,
+                "y": -2128.971923828125
+            },
+            "isTrigger": true
+        },
+        "Rigidbody2D": {
+            "mass": 1.0,
+            "drag": 0.0,
+            "gravity": 1.0,
+            "static": true,
+            "kinematic": false,
+            "grounded": false,
+            "pos": {
+                "x": 13368.064453125,
+                "y": -2378.971923828125
+            },
+            "vel": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        },
+        "Animation": {
+            "spritesPerRow": 6,
+            "spritesPerCol": 5,
+            "numFrames": 30,
+            "startFrame": 0,
+            "endFrame": 29,
+            "timePerFrame": 0.02,
+            "isLooping": true,
+            "playOnce": false
+        }
+    }
+}

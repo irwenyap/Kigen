@@ -1,0 +1,100 @@
+{
+    "Components": {
+        "Name": {
+            "name": "DatalogTrigger3",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 0,
+            "position": {
+                "x": 16914.78125,
+                "y": -6449.94970703125,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 128.0,
+                "y": 256.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": -0.0,
+                "y": 0.0,
+                "z": -0.0
+            },
+            "localPosition": {
+                "x": 16.91478157043457,
+                "y": -6.449949741363525,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 0.12800000607967377,
+                "y": 0.25600001215934753,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": -0.0,
+                "y": 0.0,
+                "z": -0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": true,
+            "sortingLayer": 5,
+            "textureFile": "194d527a524-a98f1b5532cd7581-4f7b7fde24d3287b"
+        },
+        "AABBCollider2D": {
+            "bounciness": 0.0,
+            "min": {
+                "x": 16789.580078125,
+                "y": -6820.2509765625
+            },
+            "max": {
+                "x": 17048.080078125,
+                "y": -6424.9501953125
+            },
+            "isTrigger": true
+        },
+        "Rigidbody2D": {
+            "mass": 1.0,
+            "drag": 0.0,
+            "gravity": 1.0,
+            "static": true,
+            "kinematic": false,
+            "grounded": false,
+            "pos": {
+                "x": 16914.78125,
+                "y": -6449.94970703125
+            },
+            "vel": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        },
+        "Animation": {
+            "spritesPerRow": 16,
+            "spritesPerCol": 8,
+            "numFrames": 128,
+            "startFrame": 0,
+            "endFrame": 128,
+            "timePerFrame": 0.02,
+            "isLooping": true,
+            "playOnce": false
+        },
+        "ScriptComponent": {
+            "className": "SandBox.DatalogTrigger",
+            "parameters": {
+                "datalogID": {
+                    "type": "Int",
+                    "value": 3
+                },
+                "yOffset": {
+                    "type": "Float",
+                    "value": 85.0
+                }
+            }
+        }
+    }
+}

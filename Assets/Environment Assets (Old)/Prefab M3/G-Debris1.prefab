@@ -1,0 +1,32 @@
+{
+    "Components": {
+        "Name": {
+            "name": "G-Debris1",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "position": {
+                "x": -6605.44970703125,
+                "y": -750.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1000.0,
+                "y": 1000.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": false,
+            "textureFile": "1934fbfdc93-6b2e2577e10ef61-474bd1fe70c5acf2"
+        }
+    }
+}

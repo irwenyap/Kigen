@@ -1,0 +1,32 @@
+{
+    "Components": {
+        "Name": {
+            "name": "Scaffold9",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "position": {
+                "x": -1902.252685546875,
+                "y": -479.55999755859375,
+                "z": -0.699999988079071
+            },
+            "scale": {
+                "x": 512.0,
+                "y": 1920.0,
+                "z": 0.9999935030937195
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 90.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": false,
+            "textureFile": "1937934dc9a-2dc93cb39c8005d8-9338313ddfbd89a9"
+        }
+    }
+}

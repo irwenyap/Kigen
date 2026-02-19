@@ -1,0 +1,64 @@
+{
+    "Components": {
+        "Name": {
+            "name": "Mission Control Portrait",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 11698482,
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1000.0,
+                "y": 1000.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": -0.0,
+                "y": 0.0,
+                "z": -0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 6,
+            "isAnimated": false,
+            "sortingLayer": 0,
+            "textureFile": "19382a6917b-59f96513189c413a-316e1bf59e1f58e1"
+        },
+        "UI": {
+            "position": {
+                "x": 0.8500000238418579,
+                "y": 0.5
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            },
+            "size": {
+                "x": 0.15000000596046448,
+                "y": 0.4099999964237213
+            },
+            "rotation": 0.0
+        }
+    }
+}

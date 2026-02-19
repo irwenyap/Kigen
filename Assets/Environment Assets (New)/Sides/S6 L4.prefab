@@ -1,0 +1,49 @@
+{
+    "Components": {
+        "Name": {
+            "name": "S6 L4",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 0,
+            "position": {
+                "x": 7371.44189453125,
+                "y": -5676.2197265625,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1024.0,
+                "y": 2560.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 1000.0,
+                "y": 1000.0,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": false,
+            "sortingLayer": 0,
+            "textureFile": "19557cf5a2d-e39af3be1c82cb4d-a0aaf1cffd5cee14"
+        }
+    }
+}

@@ -1,18 +1,129 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="Audio\AudioManager.cpp" />
+    <ClCompile Include="glad.c" />
+    <ClCompile Include="Graphics\GraphicsManager.cpp" />
+    <ClCompile Include="Graphics\Mesh.cpp" />
+    <ClCompile Include="Graphics\Texture.cpp" />
+    <ClCompile Include="Input\InputManager.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Physics\PhysicsSystem.cpp" />
+    <ClCompile Include="Graphics\RenderSystem.cpp" />
+    <ClCompile Include="Scene\SceneManager.cpp" />
+    <ClCompile Include="Graphics\Shader.cpp" />
+    <ClCompile Include="Graphics\Window.cpp" />
+    <ClCompile Include="Graphics\BatchData.cpp" />
+    <ClCompile Include="Graphics\FrameBuffer.cpp" />
+    <ClCompile Include="Physics\BitsetGrid.cpp" />
+    <ClCompile Include="Utility\JSONParser.cpp" />
+    <ClCompile Include="Tools\Panels\AssetBrowserPanel.cpp" />
+    <ClCompile Include="Tools\Scripting\ScriptEngine.cpp" />
+    <ClCompile Include="Tools\Scripting\ScriptGlue.cpp" />
+    <ClCompile Include="ECS\ECSManager.cpp" />
+    <ClCompile Include="Tools\ImGui\imgui_stdlib.cpp" />
+    <ClCompile Include="Graphics\FontCharacter.cpp" />
+    <ClCompile Include="Graphics\TextureArray.cpp" />
+    <ClCompile Include="Tools\Panels\AssetBrowserPanel.cpp" />
+    <ClCompile Include="Graphics\Font.cpp" />
+    <ClCompile Include="Graphics\EngineCamera.cpp" />
+    <ClCompile Include="Scene\MainScene.cpp" />
+    <ClCompile Include="Utility\MetadataHandler.cpp" />
+    <ClCompile Include="ECS\EntityManager.cpp" />
+    <ClCompile Include="Graphics\UISystem.cpp" />
+    <ClCompile Include="Tools\ImGui\ImGuizmo\ImGuizmo.cpp" />
+    <ClCompile Include="Systems\AnimationSystem.cpp" />
+    <ClCompile Include="Systems\TransformSystem.cpp" />
+    <ClCompile Include="Utility\ComponentIDGenerator.cpp" />
+    <ClCompile Include="Utility\EngineState.cpp" />
+    <ClCompile Include="Systems\AudioSystem.cpp" />
+    <ClCompile Include="Audio\AudioClip.cpp" />
+    <ClCompile Include="Audio\FMODWrapper.cpp" />
+    <ClCompile Include="Tools\PrefabManager.cpp" />
+    <ClCompile Include="Tools\Panels\LayersPanel.cpp" />
+    <ClCompile Include="Layers\LayerManager.cpp" />
+    <ClCompile Include="Tools\Panels\ConsolePanel.cpp" />
+    <ClCompile Include="Systems\StateMachineSystem.cpp" />
+    <ClCompile Include="Layers\SortingLayerManager.cpp" />
+    <ClCompile Include="Tools\Panels\LoggerPanel.cpp" />
+    <ClCompile Include="Systems\CameraSystem.cpp" />
+    <ClCompile Include="pl_mpeg.c" />
+    <ClCompile Include="Systems\VideoPlayerSystem.cpp" />
+    <ClCompile Include="Video\VideoClip.cpp" />
+    <ClCompile Include="Tools\Panels\GameViewPanel.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Application.hpp" />
+    <ClInclude Include="Components\Collider2D.hpp" />
+    <ClCompile Include="Tools\Gui.cpp" />
+    <ClCompile Include="Tools\ImGui\imgui.cpp" />
+    <ClCompile Include="Tools\ImGui\imgui_demo.cpp" />
+    <ClCompile Include="Tools\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="Tools\ImGui\imgui_impl_glfw.cpp" />
+    <ClCompile Include="Tools\ImGui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="Tools\ImGui\imgui_tables.cpp" />
+    <ClCompile Include="Tools\ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="Tools\ProcessTime.cpp" />
+    <ClCompile Include="Utility\Serializer.cpp" />
+    <ClCompile Include="Tools\Panels\HierachyPanel.cpp" />
+    <ClCompile Include="Tools\EditorPanel.cpp" />
+    <ClCompile Include="Tools\Workspace.cpp" />
+    <ClCompile Include="Tools\Panels\ScenePanel.cpp" />
+    <ClCompile Include="Tools\Panels\ObjectEditorPanel.cpp" />
+    <ClInclude Include="EventManager.hpp" />
+    <ClInclude Include="Physics\ForcesManager.hpp" />
+    <ClInclude Include="Graphics\FontCharacter.hpp" />
+    <ClInclude Include="Graphics\TextureArray.hpp" />
+    <ClInclude Include="Tools\Panels\AssetBrowserPanel.hpp" />
+    <ClInclude Include="Utility\ReflectionMacros.hpp" />
+    <ClInclude Include="Physics\BitsetGrid.hpp" />
+    <ClInclude Include="Utility\JSONParser.hpp" />
+    <ClInclude Include="Tools\Scripting\ScriptEngine.hpp" />
+    <ClInclude Include="Tools\Scripting\ScriptGlue.hpp" />
+    <ClInclude Include="Components\ScriptComponent.hpp" />
+    <ClInclude Include="Components\Name.hpp" />
+    <ClInclude Include="Tools\ImGui\imgui_stdlib.h" />
+    <ClInclude Include="ECS\EntityManager.hpp" />
+    <ClInclude Include="Graphics\Font.hpp" />
+    <ClInclude Include="Graphics\EngineCamera.hpp" />
+    <ClInclude Include="Scene\MainScene.hpp" />
+    <ClInclude Include="Utility\MetadataHandler.hpp" />
+    <ClInclude Include="ECS\ECSManager.hpp" />
+    <ClInclude Include="Physics\Collision.hpp" />
+    <ClInclude Include="Components\Textbox.hpp" />
+    <ClInclude Include="Graphics\UISystem.hpp" />
+    <ClInclude Include="Tools\ImGui\ImGuizmo\ImGuizmo.h" />
+    <ClInclude Include="Components\Animation.hpp" />
+    <ClInclude Include="Utility\EngineState.hpp" />
+    <ClInclude Include="Components\UI.hpp" />
+    <ClInclude Include="Systems\AnimationSystem.hpp" />
+    <ClInclude Include="Systems\TransformSystem.hpp" />
+    <ClInclude Include="Utility\ComponentIDGenerator.hpp" />
+    <ClInclude Include="Systems\AudioSystem.hpp" />
+    <ClInclude Include="Components\AudioSource.hpp" />
+    <ClInclude Include="Audio\AudioClip.hpp" />
+    <ClInclude Include="Audio\FMODWrapper.hpp" />
+    <ClInclude Include="Components\Camera.hpp" />
+    <ClInclude Include="Tools\Scripting\ScriptField.hpp" />
+    <ClInclude Include="Tools\PrefabManager.hpp" />
+    <ClInclude Include="Tools\Panels\LayersPanel.hpp" />
+    <ClInclude Include="Layers\Layer.hpp" />
+    <ClInclude Include="Layers\LayerManager.hpp" />
+    <ClInclude Include="Tools\Panels\ConsolePanel.hpp" />
+    <ClInclude Include="Components\StateMachineComponent.hpp" />
+    <ClInclude Include="StateMachine\CustomState.hpp" />
+    <ClInclude Include="StateMachine\StateMachine.hpp" />
+    <ClInclude Include="Systems\StateMachineSystem.hpp" />
+    <ClInclude Include="Layers\SortingLayer.hpp" />
+    <ClInclude Include="Layers\SortingLayerManager.hpp" />
+    <ClInclude Include="Tools\Panels\LoggerPanel.hpp" />
+    <ClInclude Include="Systems\CameraSystem.hpp" />
+    <ClInclude Include="pl_mpeg.h" />
+    <ClInclude Include="Components\VideoPlayer.hpp" />
+    <ClInclude Include="Systems\VideoPlayerSystem.hpp" />
+    <ClInclude Include="Video\VideoClip.hpp" />
+    <ClInclude Include="Tools\Panels\GameViewPanel.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -21,58 +132,79 @@
     <ClCompile Include="Application.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Window.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="glad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="InputManager.cpp">
+    <ClCompile Include="Audio\AudioManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ECSManager.hpp">
+    <ClCompile Include="Graphics\GraphicsManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="EntityManager.cpp">
+    <ClCompile Include="Graphics\RenderSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Mesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Texture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Application.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Window.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="InputManager.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Entity.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Components\Transform.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ComponentManager.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Component.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="EntityManager.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Signature.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ComponentArray.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SystemManager.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="System.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClInclude Include="Application.hpp" />
+    <ClInclude Include="Asset.hpp" />
+    <ClInclude Include="AssetManager.hpp" />
+    <ClInclude Include="Components\Renderer.hpp" />
+    <ClInclude Include="Graphics\BatchData.hpp" />
+    <ClInclude Include="Graphics\FrameBuffer.hpp" />
+    <ClInclude Include="Audio\AudioManager.hpp" />
+    <ClInclude Include="ECS\Component.hpp" />
+    <ClInclude Include="ECS\ComponentArray.hpp" />
+    <ClInclude Include="ECS\ComponentManager.hpp" />
+    <ClInclude Include="Components\Transform.hpp" />
+    <ClInclude Include="ECS\Entity.hpp" />
+    <ClInclude Include="Graphics\GraphicsManager.hpp" />
+    <ClInclude Include="Graphics\Mesh.hpp" />
+    <ClInclude Include="Graphics\stb_image.h" />
+    <ClInclude Include="Graphics\Texture.hpp" />
+    <ClInclude Include="Input\InputManager.hpp" />
+    <ClInclude Include="Components\Rigidbody2D.hpp" />
+    <ClInclude Include="Physics\PhysicsSystem.hpp" />
+    <ClInclude Include="Graphics\RenderSystem.hpp" />
+    <ClInclude Include="Scene\Scene.hpp" />
+    <ClInclude Include="Scene\SceneManager.hpp" />
+    <ClInclude Include="Graphics\Shader.hpp" />
+    <ClInclude Include="Utility\Serializer.hpp" />
+    <ClInclude Include="ECS\Signature.hpp" />
+    <ClInclude Include="ECS\System.hpp" />
+    <ClInclude Include="ECS\SystemManager.hpp" />
+    <ClInclude Include="Graphics\Vertex.hpp" />
+    <ClInclude Include="Graphics\Window.hpp" />
+    <ClInclude Include="Utility\EngineConfig.hpp" />
+    <ClInclude Include="Tools\Gui.hpp" />
+    <ClInclude Include="Tools\ImGui\imconfig.h" />
+    <ClInclude Include="Tools\ImGui\imgui.h" />
+    <ClInclude Include="Tools\ImGui\imgui_impl_glfw.h" />
+    <ClInclude Include="Tools\ImGui\imgui_impl_opengl3.h" />
+    <ClInclude Include="Tools\ImGui\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="Tools\ImGui\imgui_internal.h" />
+    <ClInclude Include="Tools\ImGui\imstb_rectpack.h" />
+    <ClInclude Include="Tools\ImGui\imstb_textedit.h" />
+    <ClInclude Include="Tools\ImGui\imstb_truetype.h" />
+    <ClInclude Include="Tools\ProcessTime.hpp" />
+    <ClInclude Include="Tools\Panels\HierachyPanel.hpp" />
+    <ClInclude Include="Tools\EditorPanel.hpp" />
+    <ClInclude Include="Tools\Workspace.hpp" />
+    <ClInclude Include="Components\Renderer.hpp" />
+    <ClInclude Include="Graphics\BatchData.hpp" />
+    <ClInclude Include="Graphics\FrameBuffer.hpp" />
+    <ClInclude Include="Asset.hpp" />
+    <ClInclude Include="AssetManager.hpp" />
+    <ClInclude Include="Tools\Panels\ScenePanel.hpp" />
+    <ClInclude Include="Tools\Panels\ObjectEditorPanel.hpp" />
   </ItemGroup>
 </Project>

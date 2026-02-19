@@ -1,0 +1,56 @@
+{
+    "Components": {
+        "Name": {
+            "name": "Datalog Manager",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 11614883,
+            "position": {
+                "x": -122.50008392333984,
+                "y": 97.49999237060547,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1000.0,
+                "y": 1000.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": -0.12250009179115295,
+                "y": 0.09749999642372131,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": -0.0,
+                "y": 0.0,
+                "z": -0.0
+            }
+        },
+        "ScriptComponent": {
+            "className": "SandBox.DatalogManager",
+            "parameters": {
+                "datalogAmount": {
+                    "type": "Int",
+                    "value": 3
+                },
+                "finalFrameDelay": {
+                    "type": "Float",
+                    "value": 5.0
+                }
+            }
+        }
+    }
+}

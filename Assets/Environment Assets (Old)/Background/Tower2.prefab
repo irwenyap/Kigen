@@ -1,0 +1,32 @@
+{
+    "Components": {
+        "Name": {
+            "name": "Tower2",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "position": {
+                "x": -4760.255859375,
+                "y": -659.043701171875,
+                "z": -1.0
+            },
+            "scale": {
+                "x": -1024.0,
+                "y": 2560.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": false,
+            "textureFile": "19379203676-82555dc4e010c650-edd73569141d71ae"
+        }
+    }
+}

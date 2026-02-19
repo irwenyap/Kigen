@@ -1,0 +1,66 @@
+{
+    "Components": {
+        "Name": {
+            "name": "Credits",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 0,
+            "position": {
+                "x": 17176.30078125,
+                "y": -5780.08642578125,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 6144.0,
+                "y": 6144.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 1000.0,
+                "y": 1000.0,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": false,
+            "sortingLayer": 25,
+            "textureFile": "196070f55e2-77010c854a518c39-19f93fccb63f3620"
+        },
+        "ScriptComponent": {
+            "className": "SandBox.Credits",
+            "parameters": {
+                "endPos": {
+                    "type": "Float",
+                    "value": -1856.68994140625
+                },
+                "moveSpeed": {
+                    "type": "Float",
+                    "value": 125.0
+                },
+                "startPos": {
+                    "type": "Float",
+                    "value": -5780.08984375
+                }
+            }
+        }
+    }
+}

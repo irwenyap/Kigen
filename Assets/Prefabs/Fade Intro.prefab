@@ -1,0 +1,79 @@
+{
+    "Components": {
+        "Name": {
+            "name": "Fade Intro",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 0,
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1000.0,
+                "y": 1000.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 1000.0,
+                "y": 1000.0,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 6,
+            "isAnimated": true,
+            "sortingLayer": 0,
+            "textureFile": "1960591f056-47463e64cff2bdc7-e323f30ce3d4b16c"
+        },
+        "Animation": {
+            "spritesPerRow": 7,
+            "spritesPerCol": 5,
+            "numFrames": 35,
+            "startFrame": 0,
+            "endFrame": 34,
+            "timePerFrame": 0.04,
+            "isLooping": false,
+            "playOnce": false
+        },
+        "ScriptComponent": {
+            "className": "SandBox.FadeIntro",
+            "parameters": {}
+        },
+        "UI": {
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.800000011920929
+            },
+            "scale": {
+                "x": 1.100000023841858,
+                "y": 1.100000023841858
+            },
+            "size": {
+                "x": 1.0,
+                "y": 1.0
+            },
+            "rotation": 0.0
+        }
+    }
+}

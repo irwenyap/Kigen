@@ -1,0 +1,49 @@
+{
+    "Components": {
+        "Name": {
+            "name": "S11 L4 Horizontal",
+            "prefabID": "1967d859286-85cca1ed19620a12-c776ccba7e80c702",
+            "prefabPath": "../Assets\\Environment Assets (New)\\Sides\\S11 L4.prefab"
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 0,
+            "position": {
+                "x": 4360.55908203125,
+                "y": -1008.523681640625,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1024.0,
+                "y": 3200.0,
+                "z": 0.9999349117279053
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 90.0
+            },
+            "localPosition": {
+                "x": 0.29068565368652344,
+                "y": 0.4965822100639343,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": -0.0,
+                "y": 0.0,
+                "z": -0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": false,
+            "sortingLayer": 3,
+            "textureFile": "1958e106c3e-658a058e4e652e5e-673205b2e8d22d74"
+        }
+    }
+}

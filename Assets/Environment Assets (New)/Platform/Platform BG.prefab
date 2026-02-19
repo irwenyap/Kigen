@@ -1,0 +1,48 @@
+{
+    "Components": {
+        "Name": {
+            "name": "Platform BG",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 11695772,
+            "position": {
+                "x": 19617.029296875,
+                "y": -3938.81787109375,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 512.0,
+                "y": 1280.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": 0.0,
+                "y": -3.621253490447998,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 1.0,
+                "y": 2.5,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": -0.0,
+                "y": 0.0,
+                "z": -0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": false,
+            "textureFile": "194dae9726a-9fa2ed5357007fa-e4c28c2225ad1fcf"
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "Components": {
+        "Name": {
+            "name": "Platform BG Limit",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 11678533,
+            "position": {
+                "x": 14355.3701171875,
+                "y": -2279.909912109375,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 512.0,
+                "y": 512.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": 14.35537052154541,
+                "y": -2.302394151687622,
+                "z": -1.0
+            },
+            "localScale": {
+                "x": 0.5120000243186951,
+                "y": 0.5120000243186951,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": false,
+            "sortingLayer": 5,
+            "textureFile": "195717c0bfb-d0377c97a351ee54-bc647b6ef6910ddd"
+        }
+    }
+}

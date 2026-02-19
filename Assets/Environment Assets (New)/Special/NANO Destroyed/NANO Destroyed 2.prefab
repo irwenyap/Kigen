@@ -1,0 +1,49 @@
+{
+    "Components": {
+        "Name": {
+            "name": "NANO Destroyed 2",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 0,
+            "position": {
+                "x": 15749.419921875,
+                "y": -8052.9853515625,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 512.0,
+                "y": 512.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 1000.0,
+                "y": 1000.0,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": false,
+            "sortingLayer": 4,
+            "textureFile": "196481f0141-d5b1889ec65cfdb9-4bf5859569ffcff0"
+        }
+    }
+}

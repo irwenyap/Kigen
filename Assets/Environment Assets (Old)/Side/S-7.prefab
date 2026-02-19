@@ -1,0 +1,32 @@
+{
+    "Components": {
+        "Name": {
+            "name": "S-7",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "position": {
+                "x": -5919.14990234375,
+                "y": -563.225830078125,
+                "z": -0.8999999761581421
+            },
+            "scale": {
+                "x": 3840.0,
+                "y": 3456.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": false,
+            "textureFile": "1937911887c-8df0da9cbdd6f463-9ceceb13201591f3"
+        }
+    }
+}

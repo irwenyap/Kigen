@@ -1,0 +1,64 @@
+{
+    "Components": {
+        "Name": {
+            "name": "Battery Bar",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 11698482,
+            "position": {
+                "x": -426.9139099121094,
+                "y": -580.3763427734375,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1000.0,
+                "y": 1000.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": -0.42691391706466675,
+                "y": -0.580376386642456,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": -0.0,
+                "y": 0.0,
+                "z": -0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 6,
+            "isAnimated": false,
+            "sortingLayer": 0,
+            "textureFile": "193791a9f69-7ae68df1b9175f91-2287e087a7a730ae"
+        },
+        "UI": {
+            "position": {
+                "x": 0.25,
+                "y": 0.8500000238418579
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            },
+            "size": {
+                "x": 0.5,
+                "y": 0.06300000101327896
+            },
+            "rotation": 0.0
+        }
+    }
+}

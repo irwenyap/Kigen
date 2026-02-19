@@ -1,0 +1,49 @@
+{
+    "Components": {
+        "Name": {
+            "name": "FG3 Stretch No Blur",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 11643757,
+            "position": {
+                "x": -5029.9970703125,
+                "y": -766.8334350585938,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 2314.60009765625,
+                "y": 1134.5999755859375,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": -7.722789764404297,
+                "y": -0.7998276948928833,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 3.3100032806396484,
+                "y": 1.0300021171569824,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 8.600000381469727
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": false,
+            "sortingLayer": 7,
+            "textureFile": "19574e1ce44-8f631d51708367c0-d6cc1cf8bfefe74a"
+        }
+    }
+}

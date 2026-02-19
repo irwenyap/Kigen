@@ -1,0 +1,49 @@
+{
+    "Components": {
+        "Name": {
+            "name": "S11 L4",
+            "prefabID": "1958b889af6-e562b9572e6e2b00-5dd15d0b49a2914c",
+            "prefabPath": "../Assets\\Environment Assets (New)\\Sides\\S6 L4.prefab"
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 0,
+            "position": {
+                "x": 5379.1611328125,
+                "y": -1597.0,
+                "z": 5.755396159656812e-13
+            },
+            "scale": {
+                "x": 1024.0,
+                "y": 2560.0,
+                "z": 0.9999903440475464
+            },
+            "rotation": {
+                "x": -0.0,
+                "y": 0.0,
+                "z": -0.0
+            },
+            "localPosition": {
+                "x": 0.29068565368652344,
+                "y": 0.4965822100639343,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": -0.0,
+                "y": 0.0,
+                "z": -0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": false,
+            "sortingLayer": 4,
+            "textureFile": "1958e106c3e-658a058e4e652e5e-673205b2e8d22d74"
+        }
+    }
+}

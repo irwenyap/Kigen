@@ -1,0 +1,96 @@
+{
+    "Components": {
+        "Name": {
+            "name": "Player",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 0,
+            "position": {
+                "x": 16688.880859375,
+                "y": -2359.012451171875,
+                "z": 3.552737395723024e-15
+            },
+            "scale": {
+                "x": 256.0,
+                "y": 255.99998474121094,
+                "z": 0.9999999403953552
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.00010427392408018932
+            },
+            "localPosition": {
+                "x": -0.00001430511474609375,
+                "y": -0.20000094175338745,
+                "z": -5.9604641222676946e-8
+            },
+            "localScale": {
+                "x": 0.25599998235702515,
+                "y": 0.25599998235702515,
+                "z": 0.9999999403953552
+            },
+            "localRotation": {
+                "x": -0.0,
+                "y": 0.0,
+                "z": -0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": true,
+            "sortingLayer": 6,
+            "textureFile": "194d9833da9-20760c263943842d-8a523d96658923d"
+        },
+        "AABBCollider2D": {
+            "bounciness": 0.0,
+            "min": {
+                "x": 16658.177734375,
+                "y": -2420.316650390625
+            },
+            "max": {
+                "x": 16720.076171875,
+                "y": -2327.716064453125
+            },
+            "isTrigger": false
+        },
+        "Rigidbody2D": {
+            "mass": 1.0,
+            "drag": 0.0,
+            "gravity": 3.0,
+            "static": false,
+            "kinematic": false,
+            "grounded": true,
+            "pos": {
+                "x": 16688.880859375,
+                "y": -2359.012451171875
+            },
+            "vel": {
+                "x": 0.0,
+                "y": -45.000003814697266
+            }
+        },
+        "Animation": {
+            "spritesPerRow": 7,
+            "spritesPerCol": 7,
+            "numFrames": 49,
+            "startFrame": 21,
+            "endFrame": 29,
+            "timePerFrame": 0.03,
+            "isLooping": false,
+            "playOnce": false
+        },
+        "ScriptComponent": {
+            "className": "SandBox.PlayerNew",
+            "parameters": {
+                "idBatt": {
+                    "type": "UInt",
+                    "value": 11626139
+                }
+            }
+        }
+    }
+}

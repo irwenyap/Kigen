@@ -1,0 +1,49 @@
+{
+    "Components": {
+        "Name": {
+            "name": "FG5 No Blur",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 11643757,
+            "position": {
+                "x": -6054.39990234375,
+                "y": -797.3699951171875,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 2560.0,
+                "y": 1536.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 8.800000190734863
+            },
+            "localPosition": {
+                "x": -8.672530174255371,
+                "y": -0.7973700165748596,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 2.559999942779541,
+                "y": 1.53600013256073,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": -0.0,
+                "y": 0.0,
+                "z": -0.15358896553516388
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": false,
+            "sortingLayer": 7,
+            "textureFile": "19574e1ce53-71c64f45348f7888-b98ce9c166920978"
+        }
+    }
+}

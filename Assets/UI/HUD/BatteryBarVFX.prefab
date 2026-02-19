@@ -1,0 +1,60 @@
+{
+    "Components": {
+        "Name": {
+            "name": "BatteryBarVFX",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "position": {
+                "x": 3250.3095703125,
+                "y": 999.0139770507813,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1000.0,
+                "y": 1000.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 6,
+            "isAnimated": false,
+            "textureFile": "193791a9f73-cbcfb1dbc52cc38c-a776ceb7d9ce294b"
+        },
+        "Animation": {
+            "spritesPerRow": 4,
+            "spritesPerCol": 3,
+            "numFrames": 10,
+            "startFrame": 0,
+            "endFrame": 10,
+            "timePerFrame": 0.15,
+            "isLooping": false
+        },
+        "ScriptComponent": {
+            "className": "SandBox.BatteryBarVFX",
+            "parameters": {}
+        },
+        "UI": {
+            "position": {
+                "x": 0.20000000298023224,
+                "y": 0.6499999761581421
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            },
+            "size": {
+                "x": 0.6000000238418579,
+                "y": 0.5
+            },
+            "rotation": 0.0
+        }
+    }
+}

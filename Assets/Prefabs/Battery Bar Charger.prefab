@@ -1,0 +1,68 @@
+{
+    "Components": {
+        "Name": {
+            "name": "Battery Bar Charger",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 11698482,
+            "position": {
+                "x": -555.702392578125,
+                "y": -272.9309997558594,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1000.0,
+                "y": 1000.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": -0.5557024478912354,
+                "y": -0.2729310095310211,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": -0.0,
+                "y": 0.0,
+                "z": -0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 6,
+            "isAnimated": false,
+            "sortingLayer": 0,
+            "textureFile": "1937c24a14e-a76966f285ecca2-f5905721a7f9ab6"
+        },
+        "ScriptComponent": {
+            "className": "SandBox.BatteryBar",
+            "parameters": {}
+        },
+        "UI": {
+            "position": {
+                "x": 0.28299999237060547,
+                "y": 0.8686000108718872
+            },
+            "scale": {
+                "x": 0.936993420124054,
+                "y": 1.0
+            },
+            "size": {
+                "x": 0.4339999854564667,
+                "y": 0.023000000044703484
+            },
+            "rotation": 0.0
+        }
+    }
+}

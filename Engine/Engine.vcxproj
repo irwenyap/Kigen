@@ -5,6 +5,14 @@
       <Configuration>Debug</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
+    <ProjectConfiguration Include="Installer|Win32">
+      <Configuration>Installer</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Installer|x64">
+      <Configuration>Installer</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
     <ProjectConfiguration Include="Release|Win32">
       <Configuration>Release</Configuration>
       <Platform>Win32</Platform>
@@ -39,6 +47,13 @@
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Installer|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
@@ -46,6 +61,13 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Installer|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
@@ -63,22 +85,37 @@
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Installer|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Installer|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(SolutionDir)libs;$(SolutionDir)libs\glad;$(SolutionDir)libs\glfw\include;$(IncludePath)</IncludePath>
-    <OutDir>$(SolutionDir)bin\$(Configuration)-$(Platform)\</OutDir>
-    <IntDir>$(SolutionDir).tmp\$(Configuration)-$(Platform)\</IntDir>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)bin\$(ProjectName)\$(Configuration)-$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir).tmp\$(ProjectName)\$(Configuration)-$(Platform)\</IntDir>
+    <LibraryPath>$(SolutionDir)External\lib;$(SolutionDir)External\lib\mono\monoDebug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(SolutionDir)libs\glfw\include;$(SolutionDir)libs;$(SolutionDir)libs\glad;$(IncludePath)</IncludePath>
-    <OutDir>$(SolutionDir)bin\$(Configuration)-$(Platform)\</OutDir>
-    <IntDir>$(SolutionDir).tmp\$(Configuration)-$(Platform)\</IntDir>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)bin\$(ProjectName)\$(Configuration)-$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir).tmp\$(ProjectName)\$(Configuration)-$(Platform)\</IntDir>
+    <LibraryPath>$(SolutionDir)External\lib\mono\monoRelease;$(SolutionDir)External\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Installer|x64'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)bin\NANO\$(Configuration)-$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir).tmp\$(ProjectName)\$(Configuration)-$(Platform)\</IntDir>
+    <LibraryPath>$(SolutionDir)External\lib\mono\monoRelease;$(SolutionDir)External\lib;$(LibraryPath)</LibraryPath>
+    <TargetName>NANO</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -86,11 +123,19 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)libs\fmod\studio\inc;$(SolutionDir)libs\fmod\core\inc;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)libs\fmod\studio\lib\x86;$(SolutionDir)libs\fmod\core\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>fmodL_vc.lib;fmodstudioL_vc.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y /d "$(SolutionDir)libs\fmod\core\lib\x64\*.dll" "$(OutDir)"
+xcopy /y /d "$(SolutionDir)libs\fmod\studio\lib\x64\*.dll" "$(OutDir)"
+xcopy /y /d "$(SolutionDir)External\include\mono\bin\*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -100,13 +145,45 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)libs\fmod\studio\inc;$(SolutionDir)libs\fmod\core\inc;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)libs\fmod\studio\lib\x86;$(SolutionDir)libs\fmod\core\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>fmodstudio_vc.lib;fmod_vc.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y /d "$(SolutionDir)libs\fmod\core\lib\x64\*.dll" "$(OutDir)"
+xcopy /y /d "$(SolutionDir)libs\fmod\studio\lib\x64\*.dll" "$(OutDir)"
+xcopy /y /d "$(SolutionDir)External\include\mono\bin\*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Installer|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)libs\fmod\studio\inc;$(SolutionDir)libs\fmod\core\inc;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)libs\fmod\studio\lib\x86;$(SolutionDir)libs\fmod\core\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>fmodstudio_vc.lib;fmod_vc.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y /d "$(SolutionDir)libs\fmod\core\lib\x64\*.dll" "$(OutDir)"
+xcopy /y /d "$(SolutionDir)libs\fmod\studio\lib\x64\*.dll" "$(OutDir)"
+xcopy /y /d "$(SolutionDir)External\include\mono\bin\*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -115,15 +192,21 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalIncludeDirectories>$(SolutionDir)External\include\filewatch;$(SolutionDir)External\include;$(SolutionDir)External\include\glad;$(SolutionDir)External\include\glfw;$(SolutionDir)External\include\freetype;$(SolutionDir)External\include\dlg;$(SolutionDir)External\include\mono\include;$(SolutionDir)External\include\rapidjson;$(SolutionDir)External\include\glm;$(SolutionDir)External\include\fmod_core;$(SolutionDir)External\include\fmod_studio;$(SolutionDir)Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>glfw3.lib;opengl32.lib;Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration);$(SolutionDir)libs\glfw\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>fmodL_vc.lib;fmodstudioL_vc.lib;glfw\glfw3.lib;opengl32.lib;freetype\freetype.lib;Core.lib;%(AdditionalDependencies);mono-2.0-sgen.lib;libmono-static-sgen.lib;MonoPosixHelper.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)bin\Core\$(Configuration)-$(Platform)\;$(SolutionDir)External\lib\fmod_studio\x64;$(SolutionDir)External\lib\fmod_core\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y /d "$(SolutionDir)External\lib\fmod_core\x64\*.dll" "$(OutDir)"
+xcopy /y /d "$(SolutionDir)External\lib\fmod_studio\x64\*.dll" "$(OutDir)"
+xcopy /y /d "$(SolutionDir)External\include\mono\monobin\*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -134,25 +217,121 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)External\include\filewatch;$(SolutionDir)External\include;$(SolutionDir)External\include\glad;$(SolutionDir)External\include\glfw;$(SolutionDir)External\include\freetype;$(SolutionDir)External\include\dlg;$(SolutionDir)External\include\mono\include;$(SolutionDir)External\include\ImGui;$(SolutionDir)External\include\glm;$(SolutionDir)External\include\fmod_core;$(SolutionDir)External\include\fmod_studio;$(SolutionDir)Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWarningAsError>false</TreatWarningAsError>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration);$(SolutionDir)libs\glfw\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>fmodstudio_vc.lib;fmod_vc.lib;glfw\glfw3.lib;opengl32.lib;freetype\freetype.lib;%(AdditionalDependencies);mono-2.0-sgen.lib;libmono-static-sgen.lib;MonoPosixHelper.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration);$(SolutionDir)External\lib\fmod_core\x64;$(SolutionDir)External\lib\fmod_studio\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y /d "$(SolutionDir)External\lib\fmod_core\x64\*.dll" "$(OutDir)"
+xcopy /y /d "$(SolutionDir)External\lib\fmod_studio\x64\*.dll" "$(OutDir)"
+xcopy /y /d "$(SolutionDir)External\include\mono\monobin\*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Installer|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;INSTALLER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)External\include\filewatch;$(SolutionDir)External\include;$(SolutionDir)External\include\glad;$(SolutionDir)External\include\glfw;$(SolutionDir)External\include\freetype;$(SolutionDir)External\include\dlg;$(SolutionDir)External\include\mono\include;$(SolutionDir)External\include\ImGui;$(SolutionDir)External\include\glm;$(SolutionDir)External\include\fmod_core;$(SolutionDir)External\include\fmod_studio;$(SolutionDir)Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>fmodstudio_vc.lib;fmod_vc.lib;glfw\glfw3.lib;opengl32.lib;freetype\freetype.lib;%(AdditionalDependencies);mono-2.0-sgen.lib;libmono-static-sgen.lib;MonoPosixHelper.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration);$(SolutionDir)External\lib\fmod_core\x64;$(SolutionDir)External\lib\fmod_studio\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y /d "$(SolutionDir)External\lib\fmod_core\x64\*.dll" "$(OutDir)"
+xcopy /y /d "$(SolutionDir)External\lib\fmod_studio\x64\*.dll" "$(OutDir)"
+xcopy /y /d "$(SolutionDir)External\include\mono\monobin\*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
-    <ClCompile Include="ECSManager.hpp" />
-    <ClCompile Include="EntityManager.cpp" />
+    <ClCompile Include="Audio\AudioClip.cpp" />
+    <ClCompile Include="Audio\FMODWrapper.cpp" />
+    <ClCompile Include="Tools\Panels\GameViewPanel.cpp" />
+    <ClCompile Include="Systems\StateMachineSystem.cpp" />
+    <ClCompile Include="Layers\SortingLayerManager.cpp" />
+    <ClCompile Include="Systems\CameraSystem.cpp" />
+    <ClCompile Include="pl_mpeg.c" />
+    <ClCompile Include="Tools\Panels\ConsolePanel.cpp" />
+    <ClCompile Include="Layers\LayerManager.cpp" />
+    <ClCompile Include="Tools\Panels\LayersPanel.cpp" />
+    <ClCompile Include="Tools\Panels\LoggerPanel.cpp" />
+    <ClCompile Include="Tools\PrefabManager.cpp" />
+    <ClCompile Include="Systems\AudioSystem.cpp" />
+    <ClCompile Include="Utility\ComponentIDGenerator.cpp" />
+    <ClCompile Include="ECS\ECSManager.cpp" />
+    <ClCompile Include="ECS\EntityManager.cpp" />
+    <ClCompile Include="Utility\EngineState.cpp" />
+    <ClCompile Include="Graphics\UISystem.cpp" />
+    <ClCompile Include="Scene\MainScene.cpp" />
+    <ClCompile Include="Utility\MetadataHandler.cpp" />
+    <ClCompile Include="Systems\AnimationSystem.cpp" />
+    <ClCompile Include="Systems\TransformSystem.cpp" />
+    <ClCompile Include="Tools\ImGui\ImGuizmo\ImGuizmo.cpp" />
+    <ClCompile Include="Tools\ImGui\imgui_stdlib.cpp" />
+    <ClCompile Include="Graphics\EngineCamera.cpp" />
+    <ClCompile Include="Graphics\Font.cpp" />
+    <ClCompile Include="Tools\Panels\AssetBrowserPanel.cpp" />
+    <ClCompile Include="Audio\AudioManager.cpp" />
     <ClCompile Include="glad.c" />
-    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="Graphics\BatchData.cpp" />
+    <ClCompile Include="Graphics\FontCharacter.cpp" />
+    <ClCompile Include="Graphics\FrameBuffer.cpp" />
+    <ClCompile Include="Graphics\GraphicsManager.cpp" />
+    <ClCompile Include="Graphics\Mesh.cpp" />
+    <ClCompile Include="Graphics\Texture.cpp" />
+    <ClCompile Include="Graphics\TextureArray.cpp" />
+    <ClCompile Include="Input\InputManager.cpp" />
+    <ClCompile Include="Utility\JSONParser.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="Physics\BitsetGrid.cpp" />
+    <ClCompile Include="Physics\PhysicsSystem.cpp" />
+    <ClCompile Include="Graphics\RenderSystem.cpp" />
+    <ClCompile Include="Scene\SceneManager.cpp" />
+    <ClCompile Include="Graphics\Shader.cpp" />
+    <ClCompile Include="Utility\Serializer.cpp" />
+    <ClCompile Include="Tools\EditorPanel.cpp" />
+    <ClCompile Include="Tools\Gui.cpp" />
+    <ClCompile Include="Tools\Panels\HierachyPanel.cpp" />
+    <ClCompile Include="Tools\ImGui\imgui.cpp" />
+    <ClCompile Include="Tools\ImGui\imgui_demo.cpp" />
+    <ClCompile Include="Tools\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="Tools\ImGui\imgui_impl_glfw.cpp" />
+    <ClCompile Include="Tools\ImGui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="Tools\ImGui\imgui_tables.cpp" />
+    <ClCompile Include="Tools\ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="Tools\Panels\ScenePanel.cpp" />
+    <ClCompile Include="Tools\Panels\ObjectEditorPanel.cpp" />
+    <ClCompile Include="Tools\ProcessTime.cpp" />
+    <ClCompile Include="Tools\Scripting\ScriptEngine.cpp" />
+    <ClCompile Include="Tools\Scripting\ScriptGlue.cpp" />
+    <ClCompile Include="Tools\Workspace.cpp" />
+    <ClCompile Include="Graphics\Window.cpp" />
+    <ClCompile Include="Systems\VideoPlayerSystem.cpp" />
+    <ClCompile Include="Video\VideoClip.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Core\Core.vcxproj">
@@ -161,17 +340,105 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.hpp" />
-    <ClInclude Include="Component.hpp" />
-    <ClInclude Include="ComponentArray.hpp" />
-    <ClInclude Include="ComponentManager.hpp" />
+    <ClInclude Include="Asset.hpp" />
+    <ClInclude Include="Audio\AudioClip.hpp" />
+    <ClInclude Include="Components\AudioSource.hpp" />
+    <ClInclude Include="Audio\FMODWrapper.hpp" />
+    <ClInclude Include="Components\Camera.hpp" />
+    <ClInclude Include="Components\VideoPlayer.hpp" />
+    <ClInclude Include="Components\StateMachineComponent.hpp" />
+    <ClInclude Include="Tools\Panels\GameViewPanel.hpp" />
+    <ClInclude Include="StateMachine\CustomState.hpp" />
+    <ClInclude Include="StateMachine\StateMachine.hpp" />
+    <ClInclude Include="Systems\StateMachineSystem.hpp" />
+    <ClInclude Include="Layers\SortingLayer.hpp" />
+    <ClInclude Include="Layers\SortingLayerManager.hpp" />
+    <ClInclude Include="Systems\CameraSystem.hpp" />
+    <ClInclude Include="pl_mpeg.h" />
+    <ClInclude Include="Tools\Panels\ConsolePanel.hpp" />
+    <ClInclude Include="Layers\LayerManager.hpp" />
+    <ClInclude Include="Layers\Layer.hpp" />
+    <ClInclude Include="Tools\Panels\LayersPanel.hpp" />
+    <ClInclude Include="Tools\Panels\LoggerPanel.hpp" />
+    <ClInclude Include="Tools\PrefabManager.hpp" />
+    <ClInclude Include="Systems\AudioSystem.hpp" />
+    <ClInclude Include="Utility\ComponentIDGenerator.hpp" />
+    <ClInclude Include="Components\Animation.hpp" />
+    <ClInclude Include="Components\Name.hpp" />
+    <ClInclude Include="Components\Textbox.hpp" />
+    <ClInclude Include="Components\UI.hpp" />
+    <ClInclude Include="ECS\ECSManager.hpp" />
+    <ClInclude Include="ECS\EntityManager.hpp" />
+    <ClInclude Include="Graphics\UISystem.hpp" />
+    <ClInclude Include="Utility\EngineState.hpp" />
+    <ClInclude Include="Scene\MainScene.hpp" />
+    <ClInclude Include="Utility\MetadataHandler.hpp" />
+    <ClInclude Include="Physics\Collision.hpp" />
+    <ClInclude Include="Systems\AnimationSystem.hpp" />
+    <ClInclude Include="Systems\TransformSystem.hpp" />
+    <ClInclude Include="Tools\ImGui\ImGuizmo\ImGuizmo.h" />
+    <ClInclude Include="Tools\ImGui\imgui_stdlib.h" />
+    <ClInclude Include="Graphics\EngineCamera.hpp" />
+    <ClInclude Include="Graphics\Font.hpp" />
+    <ClInclude Include="Tools\Panels\AssetBrowserPanel.hpp" />
+    <ClInclude Include="AssetManager.hpp" />
+    <ClInclude Include="Components\Renderer.hpp" />
+    <ClInclude Include="Components\ScriptComponent.hpp" />
+    <ClInclude Include="Utility\EngineConfig.hpp" />
+    <ClInclude Include="EventManager.hpp" />
+    <ClInclude Include="Graphics\BatchData.hpp" />
+    <ClInclude Include="Graphics\FontCharacter.hpp" />
+    <ClInclude Include="Graphics\FrameBuffer.hpp" />
+    <ClInclude Include="Components\Collider2D.hpp" />
+    <ClInclude Include="Audio\AudioManager.hpp" />
+    <ClInclude Include="ECS\Component.hpp" />
+    <ClInclude Include="ECS\ComponentArray.hpp" />
+    <ClInclude Include="ECS\ComponentManager.hpp" />
     <ClInclude Include="Components\Transform.hpp" />
-    <ClInclude Include="Entity.hpp" />
-    <ClInclude Include="EntityManager.hpp" />
-    <ClInclude Include="InputManager.hpp" />
-    <ClInclude Include="Signature.hpp" />
-    <ClInclude Include="System.hpp" />
-    <ClInclude Include="SystemManager.hpp" />
-    <ClInclude Include="Window.hpp" />
+    <ClInclude Include="ECS\Entity.hpp" />
+    <ClInclude Include="Graphics\GraphicsManager.hpp" />
+    <ClInclude Include="Graphics\Mesh.hpp" />
+    <ClInclude Include="Graphics\stb_image.h" />
+    <ClInclude Include="Graphics\Texture.hpp" />
+    <ClInclude Include="Graphics\TextureArray.hpp" />
+    <ClInclude Include="Input\InputManager.hpp" />
+    <ClInclude Include="Components\Rigidbody2D.hpp" />
+    <ClInclude Include="Utility\JSONParser.hpp" />
+    <ClInclude Include="Physics\ForcesManager.hpp" />
+    <ClInclude Include="Physics\BitsetGrid.hpp" />
+    <ClInclude Include="Physics\PhysicsSystem.hpp" />
+    <ClInclude Include="Graphics\RenderSystem.hpp" />
+    <ClInclude Include="Scene\Scene.hpp" />
+    <ClInclude Include="Scene\SceneManager.hpp" />
+    <ClInclude Include="Graphics\Shader.hpp" />
+    <ClInclude Include="Utility\Serializer.hpp" />
+    <ClInclude Include="Utility\ReflectionMacros.hpp" />
+    <ClInclude Include="ECS\Signature.hpp" />
+    <ClInclude Include="ECS\System.hpp" />
+    <ClInclude Include="ECS\SystemManager.hpp" />
+    <ClInclude Include="Graphics\Vertex.hpp" />
+    <ClInclude Include="Tools\EditorPanel.hpp" />
+    <ClInclude Include="Tools\Panels\HierachyPanel.hpp" />
+    <ClInclude Include="Tools\Panels\ScenePanel.hpp" />
+    <ClInclude Include="Tools\Panels\ObjectEditorPanel.hpp" />
+    <ClInclude Include="Tools\Scripting\ScriptEngine.hpp" />
+    <ClInclude Include="Tools\Scripting\ScriptField.hpp" />
+    <ClInclude Include="Tools\Scripting\ScriptGlue.hpp" />
+    <ClInclude Include="Tools\Workspace.hpp" />
+    <ClInclude Include="Tools\Gui.hpp" />
+    <ClInclude Include="Tools\ImGui\imconfig.h" />
+    <ClInclude Include="Tools\ImGui\imgui.h" />
+    <ClInclude Include="Tools\ImGui\imgui_impl_glfw.h" />
+    <ClInclude Include="Tools\ImGui\imgui_impl_opengl3.h" />
+    <ClInclude Include="Tools\ImGui\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="Tools\ImGui\imgui_internal.h" />
+    <ClInclude Include="Tools\ImGui\imstb_rectpack.h" />
+    <ClInclude Include="Tools\ImGui\imstb_textedit.h" />
+    <ClInclude Include="Tools\ImGui\imstb_truetype.h" />
+    <ClInclude Include="Tools\ProcessTime.hpp" />
+    <ClInclude Include="Graphics\Window.hpp" />
+    <ClInclude Include="Systems\VideoPlayerSystem.hpp" />
+    <ClInclude Include="Video\VideoClip.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

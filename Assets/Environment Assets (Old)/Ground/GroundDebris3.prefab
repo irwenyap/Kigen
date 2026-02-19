@@ -1,0 +1,32 @@
+{
+    "Components": {
+        "Name": {
+            "name": "GroundDebris3",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "position": {
+                "x": -4239.5244140625,
+                "y": -675.4400024414063,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 512.0,
+                "y": 512.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": false,
+            "textureFile": "193795f4aa9-e273f010612bdaee-9fc26e031715890c"
+        }
+    }
+}

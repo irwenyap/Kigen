@@ -1,0 +1,49 @@
+{
+    "Components": {
+        "Name": {
+            "name": "FG1 Blur",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 11697240,
+            "position": {
+                "x": 4577.92041015625,
+                "y": -3008.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 2560.0,
+                "y": 1536.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": 3.072730541229248,
+                "y": -3.0080008506774902,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 2.5600028038024902,
+                "y": 1.5360000133514404,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": false,
+            "sortingLayer": 7,
+            "textureFile": "19574ab9ad7-8c0117c2689c9aef-b624ca7cab48c102"
+        }
+    }
+}

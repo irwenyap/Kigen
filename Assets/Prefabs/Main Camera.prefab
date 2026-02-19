@@ -1,0 +1,73 @@
+{
+    "Components": {
+        "Name": {
+            "name": "Main Camera",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 0,
+            "position": {
+                "x": 16685.912109375,
+                "y": -2159.267822265625,
+                "z": 3.552752218799601e-15
+            },
+            "scale": {
+                "x": 1000.0000610351563,
+                "y": 1000.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": -0.0,
+                "y": 0.0,
+                "z": -0.0
+            },
+            "localPosition": {
+                "x": 0.0823291540145874,
+                "y": 0.06566303223371506,
+                "z": 0.9000000357627869
+            },
+            "localScale": {
+                "x": 0.2604166865348816,
+                "y": 0.28935185074806213,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": -0.0,
+                "y": 0.0,
+                "z": -0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": false,
+            "sortingLayer": 0,
+            "textureFile": "1937c2ec8a1-641df1c6952ce39e-123e196b0dfbbd0d"
+        },
+        "ScriptComponent": {
+            "className": "SandBox.CameraScript",
+            "parameters": {
+                "cameraZoom": {
+                    "type": "Float",
+                    "value": 5.0
+                },
+                "followSpeed": {
+                    "type": "Float",
+                    "value": 2.0
+                },
+                "yOffset": {
+                    "type": "Float",
+                    "value": 200.0
+                }
+            }
+        },
+        "Camera": {
+            "zoom": 1.0,
+            "width": 1920.0,
+            "height": 1080.0,
+            "isMainCamera": true,
+            "isActive": true
+        }
+    }
+}

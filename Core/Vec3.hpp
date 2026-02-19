@@ -1,9 +1,15 @@
-/*****************************************************************//**
- * \file   Vec3.hpp
- * \brief  
- * 
- * \author irwen
- * \date   April 2024
+﻿/*****************************************************************//**
+ * \file	Vec3.hpp
+ * \brief	Vec2 provides operators for arithmetic, dot products,cross products, and normalization. 
+			It includes implicit conversion to and from Vec2 and Vec4, ensuring compatibility across different dimensions​.
+ *
+ * \author	irwinjun.l, 2301305
+ * \email	irwinjun.l@digipen.edu
+ * \date	29 September 2024
+ *
+ * Copyright(C) 2024 DigiPen Institute of Technology.
+Reproduction or disclosure of this file or its contents without the
+prior written consent of DigiPen Institute of Technology is prohibited.
  *********************************************************************/
 
 #ifndef VEC_3_HPP
@@ -11,13 +17,23 @@
 
 #include <ostream>
 #include <cmath>
+#include <algorithm>
+
+struct Vec2;
+struct Vec4;
 
 struct Vec3 {
 	float x, y, z;
 
 	Vec3(float a = 0, float b = 0, float c = 0);
 	Vec3(const Vec3& rhs) = default;
+	Vec3(const Vec2& v);
+	Vec3(const Vec2& v, float c);
+	Vec3(const Vec4& v);
 	~Vec3() = default;
+
+	inline float& operator[](unsigned int i);
+	inline const float& operator[](unsigned int i) const;
 
 	Vec3 operator+(const Vec3& rhs) const;
 	Vec3& operator+=(const Vec3& rhs);
@@ -29,14 +45,21 @@ struct Vec3 {
 
 	Vec3 operator*(float scalar) const;
 	Vec3& operator*=(float scalar);
+	Vec3 operator*(const Vec3& rhs) const;
+	Vec3& operator*=(const Vec3& rhs);
 
 	Vec3 operator/(float scalar) const;
 	Vec3& operator/=(float scalar);
+	Vec3 operator/(const Vec3& rhs) const;
+	Vec3& operator/=(const Vec3& rhs);
 
 	bool operator==(const Vec3& rhs) const;
 	bool operator!=(const Vec3& rhs) const;
 
 	Vec3& operator=(const Vec3& rhs);
+
+	operator Vec2() const; // Implicit conversion to Vec2
+	operator Vec4() const; // Implicit conversion to Vec4
 
 	float Length() const;
 	float LengthSquared() const;
@@ -51,10 +74,23 @@ struct Vec3 {
 	friend std::ostream& operator<<(std::ostream& os, const Vec3& rhs);
 	friend Vec3 operator*(float scalar, const Vec3& rhs);
 	friend Vec3 operator/(float scalar, const Vec3& rhs);
+
 };
 
 inline Vec3::Vec3(float a, float b, float c) : x(a), y(b), z(c)
 {
+}
+
+inline float& Vec3::operator[](unsigned int i) {
+	if (i == 0) return x;
+	else if (i == 1) return y;
+	else return z;
+}
+
+inline const float& Vec3::operator[](unsigned int i) const {
+	if (i == 0) return x;
+	else if (i == 1) return y;
+	else return z;
 }
 
 inline Vec3 Vec3::operator+(const Vec3& rhs) const
@@ -101,6 +137,19 @@ inline Vec3& Vec3::operator*=(float scalar)
 	return *this;
 }
 
+inline Vec3 Vec3::operator*(const Vec3& rhs) const
+{
+	return Vec3(x * rhs.x, y * rhs.y, z * rhs.z);
+}
+
+inline Vec3& Vec3::operator*=(const Vec3& rhs)
+{
+	x *= rhs.x;
+	y *= rhs.y;
+	z *= rhs.z;
+	return *this;
+}
+
 inline Vec3 Vec3::operator/(float scalar) const
 {
 	return Vec3(x / scalar, y / scalar, z / scalar);
@@ -111,6 +160,19 @@ inline Vec3& Vec3::operator/=(float scalar)
 	x /= scalar;
 	y /= scalar;
 	z /= scalar;
+	return *this;
+}
+
+inline Vec3 Vec3::operator/(const Vec3& rhs) const
+{
+	return Vec3(x / rhs.x, y / rhs.y, z / rhs.z);
+}
+
+inline Vec3& Vec3::operator/=(const Vec3& rhs)
+{
+	x /= rhs.x;
+	y /= rhs.y;
+	z /= rhs.z;
 	return *this;
 }
 

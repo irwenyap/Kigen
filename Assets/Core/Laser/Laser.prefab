@@ -1,0 +1,91 @@
+{
+    "Components": {
+        "Name": {
+            "name": "Laser",
+            "prefabID": "19571445923-b50513328d4e2f2-5c2d55e249a6bc20",
+            "prefabPath": "../Assets\\01. Core\\Laser\\Laser.prefab"
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 11652504,
+            "position": {
+                "x": 10277.4404296875,
+                "y": -8794.4287109375,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 4000.0,
+                "y": 256.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": 16.214834213256836,
+                "y": -2.792222499847412,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 2.1500000953674316,
+                "y": 0.25600001215934753,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": true,
+            "sortingLayer": 0,
+            "textureFile": "194da996f2d-11994c486a64b6f8-3408515757a7b941"
+        },
+        "AABBCollider2D": {
+            "bounciness": 0.0,
+            "min": {
+                "x": 9277.4404296875,
+                "y": -8876.4296875
+            },
+            "max": {
+                "x": 11277.4404296875,
+                "y": -8841.73046875
+            },
+            "isTrigger": true
+        },
+        "Rigidbody2D": {
+            "mass": 1.0,
+            "drag": 0.0,
+            "gravity": 1.0,
+            "static": true,
+            "kinematic": false,
+            "grounded": false,
+            "pos": {
+                "x": 10277.4404296875,
+                "y": -8794.4287109375
+            },
+            "vel": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        },
+        "Animation": {
+            "spritesPerRow": 3,
+            "spritesPerCol": 2,
+            "numFrames": 6,
+            "startFrame": 0,
+            "endFrame": 4,
+            "timePerFrame": 0.08,
+            "isLooping": true,
+            "playOnce": false
+        },
+        "ScriptComponent": {
+            "className": "SandBox.Death",
+            "parameters": {}
+        }
+    }
+}

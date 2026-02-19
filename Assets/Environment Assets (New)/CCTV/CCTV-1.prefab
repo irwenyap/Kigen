@@ -1,0 +1,52 @@
+{
+    "Components": {
+        "Name": {
+            "name": "CCTV-1",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 0,
+            "position": {
+                "x": 11870.171875,
+                "y": -2141.831298828125,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 512.0,
+                "y": 512.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": 12.66408920288086,
+                "y": -2.1186273097991943,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 0.5120000243186951,
+                "y": 0.5120000243186951,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": false,
+            "textureFile": "19553238f24-4b29b1ee92d6a54c-42d535f44960cc0a"
+        },
+        "ScriptComponent": {
+            "className": "SandBox.CCTVTracking",
+            "parameters": {}
+        }
+    }
+}

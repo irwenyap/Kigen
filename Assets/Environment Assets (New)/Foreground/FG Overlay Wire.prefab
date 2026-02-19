@@ -1,0 +1,49 @@
+{
+    "Components": {
+        "Name": {
+            "name": "FG Overlay Wire",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 11697240,
+            "position": {
+                "x": 3755.414794921875,
+                "y": -2383.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 3580.0,
+                "y": 2701.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": 2.306865692138672,
+                "y": -2.4180045127868652,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 3.5800020694732666,
+                "y": 2.7010040283203125,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": false,
+            "sortingLayer": 7,
+            "textureFile": "19574e1ce3f-9c37d72eb57434c3-1a373a3889e4f847"
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "Components": {
+        "Name": {
+            "name": "FG Long",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 11643757,
+            "position": {
+                "x": 13982.283203125,
+                "y": -4676.07373046875,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 5607.498046875,
+                "y": 1964.999755859375,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": -4.099999904632568
+            },
+            "localPosition": {
+                "x": 14.897627830505371,
+                "y": -4.764779090881348,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 5.607502460479736,
+                "y": 1.964999794960022,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": -5.229999542236328
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": false,
+            "sortingLayer": 7,
+            "textureFile": "19574b7a61f-5d4eca39560665ab-296f0cef5941d96"
+        }
+    }
+}

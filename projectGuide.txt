@@ -1,0 +1,3 @@
+To turn on and off the level editor, press '=' after pressing 'Play'
+Debug mode has console appearing.
+Installer/Release modes does not.

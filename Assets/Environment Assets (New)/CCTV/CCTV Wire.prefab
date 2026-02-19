@@ -1,0 +1,49 @@
+{
+    "Components": {
+        "Name": {
+            "name": "CCTV Wire",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 11691222,
+            "position": {
+                "x": -2319.76708984375,
+                "y": 18.66655731201172,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 512.0,
+                "y": 1280.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": -4.729996681213379,
+                "y": 2.6949753761291504,
+                "z": -5.9603991076073726e-8
+            },
+            "localScale": {
+                "x": 0.5119999647140503,
+                "y": 1.2799999713897705,
+                "z": 0.9999890327453613
+            },
+            "localRotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": false,
+            "sortingLayer": 4,
+            "textureFile": "19571f482a4-7326491345c12b7e-d1283c5d56e62644"
+        }
+    }
+}

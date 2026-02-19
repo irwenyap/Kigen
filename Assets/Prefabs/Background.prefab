@@ -1,0 +1,53 @@
+{
+    "Components": {
+        "Name": {
+            "name": "Background",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 0,
+            "position": {
+                "x": 10563.1298828125,
+                "y": -400.62158203125,
+                "z": -1.6799999475479126
+            },
+            "scale": {
+                "x": 79389.6796875,
+                "y": 100000.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localRotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": false,
+            "sortingLayer": 0,
+            "textureFile": "1957a1923a1-fcc2a8428171619f-d2e5957b3c8d7594"
+        },
+        "ScriptComponent": {
+            "className": "SandBox.Asda",
+            "parameters": {}
+        }
+    }
+}

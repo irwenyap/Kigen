@@ -1,0 +1,48 @@
+{
+    "Components": {
+        "Name": {
+            "name": "Ground Light 4",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 0,
+            "position": {
+                "x": 16918.259765625,
+                "y": -7019.60009765625,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 700.0,
+                "y": 798.5,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 1000.0,
+                "y": 1000.0,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": false,
+            "textureFile": "19556d3616a-c7e5420880ef7ac5-fa1e4d7d527640aa"
+        }
+    }
+}

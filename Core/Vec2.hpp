@@ -1,9 +1,16 @@
-/*****************************************************************//**
- * \file   Vec2.hpp
- * \brief
+﻿/*****************************************************************//**
+ * \file    Vec2.hpp
+ * \brief	This file defines the 2D vector class (Vec2). It includes methods for basic vector arithmetic 
+			(addition, subtraction, scaling), comparison operators, dot product, cross product, and normalization. 
+			It also supports implicit conversion to Vec3 and Vec4, allowing flexible usage in higher dimensions​.
  *
- * \author irwen
- * \date   April 2024
+ * \author	irwinjun.l, 2301305
+ * \email	irwinjun.l@digipen.edu
+ * \date	29 September 2024
+ *
+ * Copyright(C) 2024 DigiPen Institute of Technology.
+Reproduction or disclosure of this file or its contents without the
+prior written consent of DigiPen Institute of Technology is prohibited.
  *********************************************************************/
 
 #ifndef VEC_2_HPP
@@ -12,14 +19,17 @@
 #include <ostream>
 #include <cmath>
 
+struct Vec3;
+struct Vec4;
+
 struct Vec2 {
 	float x, y;
 
 	Vec2(float a = 0, float b = 0);
 	Vec2(const Vec2& rhs) = default;
+	Vec2(const Vec3& v);
+	Vec2(const Vec4& v);
 	~Vec2() = default;
-
-
 
 	Vec2 operator+(const Vec2& rhs) const;
 	Vec2& operator+=(const Vec2& rhs);
@@ -39,6 +49,9 @@ struct Vec2 {
 	bool operator!=(const Vec2& rhs) const;
 
 	Vec2& operator=(const Vec2& rhs);
+
+	operator Vec3() const;
+	operator Vec4() const;
 
 	float Length() const;
 	float LengthSquared() const;

@@ -1,0 +1,49 @@
+{
+    "Components": {
+        "Name": {
+            "name": "FG-6 Blur",
+            "prefabID": "",
+            "prefabPath": ""
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 11697240,
+            "position": {
+                "x": 74.15245056152344,
+                "y": -2570.3466796875,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 4000.000732421875,
+                "y": 2499.99951171875,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": -17.69999122619629
+            },
+            "localPosition": {
+                "x": -2.4416284561157227,
+                "y": -2.4932339191436768,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 4.000000953674316,
+                "y": 2.500000476837158,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": 0.0,
+                "y": -0.0,
+                "z": -14.6899995803833
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": false,
+            "sortingLayer": 8,
+            "textureFile": "195750bddaf-3bd4335720b4d3d3-9c2f66280c3233cb"
+        }
+    }
+}

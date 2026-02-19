@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A336070-E670-4120-A5A6-07AEF1C8DB8F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SandBox</RootNamespace>
+    <AssemblyName>SandBox</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Assets\Scripts\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Assets\Scripts\Source\Balls.cs">
+      <Link>Balls.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Assets\Scripts\Source\Camera.cs">
+      <Link>Camera.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Assets\Scripts\Source\Player.cs">
+      <Link>Player.cs</Link>
+    </Compile>
+    <Compile Include="Asda.cs" />
+    <Compile Include="BatteryBar.cs" />
+    <Compile Include="BatteryBarVFX.cs" />
+    <Compile Include="Block.cs" />
+    <Compile Include="BossArenaManager.cs" />
+    <Compile Include="BossIntroCutscene.cs" />
+    <Compile Include="BossTracking.cs" />
+    <Compile Include="ButtonManager.cs" />
+    <Compile Include="Cable.cs" />
+    <Compile Include="CameraChangeTrigger.cs" />
+    <Compile Include="CCTVTracking.cs" />
+    <Compile Include="ChargedBlock.cs" />
+    <Compile Include="Checkpoint.cs" />
+    <Compile Include="CheckpointManager.cs" />
+    <Compile Include="CheckpointTransition.cs" />
+    <Compile Include="CoreVFX.cs" />
+    <Compile Include="Credits.cs" />
+    <Compile Include="CrushTrigger.cs" />
+    <Compile Include="Datalog.cs" />
+    <Compile Include="DatalogManager.cs" />
+    <Compile Include="DatalogTrigger.cs" />
+    <Compile Include="Dialogue.cs" />
+    <Compile Include="DialogueManager.cs" />
+    <Compile Include="DialogueTrigger.cs" />
+    <Compile Include="ExplosionVFX.cs" />
+    <Compile Include="FadeDeath.cs" />
+    <Compile Include="FadeIntro.cs" />
+    <Compile Include="FinalCutsceneTrigger.cs" />
+    <Compile Include="FinalDoor.cs" />
+    <Compile Include="FinalDoorHandPrint.cs" />
+    <Compile Include="FPS.cs" />
+    <Compile Include="Ground.cs" />
+    <Compile Include="JumpVFX.cs" />
+    <Compile Include="Logos.cs" />
+    <Compile Include="MainMenu_Start.cs" />
+    <Compile Include="ParallaxLayer.cs" />
+    <Compile Include="ParallaxBackground.cs" />
+    <Compile Include="PauseMenu.cs" />
+    <Compile Include="PauseMenu_Resume.cs" />
+    <Compile Include="PlatformBlock.cs" />
+    <Compile Include="PlatformBlockBoss.cs" />
+    <Compile Include="PlatformBlockIntro.cs" />
+    <Compile Include="PlatformBlockReturn.cs" />
+    <Compile Include="PlatformScriptedMovementController.cs" />
+    <Compile Include="PowerBlock.cs" />
+    <Compile Include="PowerOutlet.cs" />
+    <Compile Include="PowerOutletFinal.cs" />
+    <Compile Include="ScriptedMovementController.cs" />
+    <Compile Include="Subtitle.cs" />
+    <Compile Include="Sunlight.cs" />
+    <Compile Include="PlayerNew.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TimerManager.cs" />
+    <Compile Include="UnchargedBlock.cs" />
+    <Compile Include="Death.cs" />
+    <Compile Include="Wilmer.cs" />
+    <Compile Include="WilmerSunlight.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\ScriptCore\ScriptCore.csproj">
+      <Project>{08819774-b59f-4299-b50a-ef633700b961}</Project>
+      <Name>ScriptCore</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

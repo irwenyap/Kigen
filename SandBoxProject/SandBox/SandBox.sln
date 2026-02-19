@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SandBox", "SandBox\SandBox.csproj", "{7A336070-E670-4120-A5A6-07AEF1C8DB8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScriptCore", "..\..\ScriptCore\ScriptCore.csproj", "{08819774-B59F-4299-B50A-EF633700B961}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A336070-E670-4120-A5A6-07AEF1C8DB8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A336070-E670-4120-A5A6-07AEF1C8DB8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A336070-E670-4120-A5A6-07AEF1C8DB8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A336070-E670-4120-A5A6-07AEF1C8DB8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08819774-B59F-4299-B50A-EF633700B961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08819774-B59F-4299-B50A-EF633700B961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08819774-B59F-4299-B50A-EF633700B961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08819774-B59F-4299-B50A-EF633700B961}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50E7E663-6E1B-4BBB-896A-525C6FB729B0}
+	EndGlobalSection
+EndGlobal

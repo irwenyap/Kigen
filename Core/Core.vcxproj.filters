@@ -36,6 +36,15 @@
     <ClInclude Include="Timer.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="Vec.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mat3.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StreamRedirector.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Timer.cpp">

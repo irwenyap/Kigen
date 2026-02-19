@@ -1,0 +1,49 @@
+{
+    "Components": {
+        "Name": {
+            "name": "Corner",
+            "prefabID": "1957fa58d29-8fc9c0bbcc61cd0b-d0863f8c04c2b25d",
+            "prefabPath": "../Assets\\04. Environment Assets (New)\\Corner\\Corner.prefab"
+        },
+        "Transform": {
+            "uuid": 0,
+            "parentUUID": 0,
+            "position": {
+                "x": 8530.822265625,
+                "y": -7956.16845703125,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 2560.0,
+                "y": 1536.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 1000.0,
+                "y": 1000.0,
+                "z": 1.0
+            },
+            "localRotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        "Renderer": {
+            "mesh": 3,
+            "isAnimated": false,
+            "sortingLayer": 0,
+            "textureFile": ""
+        }
+    }
+}
